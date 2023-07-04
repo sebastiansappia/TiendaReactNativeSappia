@@ -26,7 +26,7 @@ const MainScreen = () => {
                     task: input.trimStart(),
                     completed: false
                 }
-            ])
+            ]);
         }
     };
 
