@@ -15,7 +15,7 @@ const MainScreen = () => {
     const [taskActive, setTaskActive] = useState({})
 
     const onAddTask = () => {
-        if (input == '') {
+        if ((!input.replace(/\s/g, '').length) || input.length == 0) {
             console.log("No se escribió nada");
         } else {
             console.log("Se agregó una tarea");
@@ -23,7 +23,7 @@ const MainScreen = () => {
                 ...list,
                 {
                     id: list.length + 1,
-                    task: input,
+                    task: input.trimStart(),
                     completed: false
                 }
             ])
