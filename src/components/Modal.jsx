@@ -30,7 +30,7 @@ const ModalTask = ({
                             style={[styles.button, styles.buttonNotyet]}
                             onPress={() => onPressStatus(false)}
                         >
-                            <Text style={styles.textStyle}>Todavía no fue realizada</Text>
+                            <Text style={styles.textStyle}>No fue realizada</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.button, styles.buttonClose]}
@@ -84,17 +84,21 @@ const styles = StyleSheet.create({
     },
     buttonDone: {
         backgroundColor: "#00c10f",
+        display: "block",
     },
     buttonNotyet: {
         backgroundColor: "red",
+        display: "block",
     },
     buttonClose: {
         backgroundColor: "grey",
+        display: "block",
     },
     textStyle: {
         color: "white",
         fontWeight: "bold",
         textAlign: "center",
+        display: "block",
     },
     modalText: {
         marginBottom: 15,

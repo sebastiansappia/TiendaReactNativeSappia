@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
         alignItems: "flex-end",
         backgroundColor: "#fff",
         width: "100%",
+        marginTop: "12%",
     },
     input: {
         width: 250,

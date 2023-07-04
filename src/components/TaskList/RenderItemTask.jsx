@@ -19,7 +19,7 @@ export default RenderItemTask;
 
 const styles = StyleSheet.create({
     task: {
-        width: 430,
+        width: 400,
         padding: 10,
         backgroundColor: "#d800ff",
         borderRadius: 6,
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     taskCompleted: {
-        width: 430,
+        width: 400,
         padding: 10,
         backgroundColor: "#00c10f",
         borderRadius: 6,
