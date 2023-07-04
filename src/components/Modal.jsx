@@ -18,7 +18,7 @@ const ModalTask = ({
         >
             <View style={styles.centeredView}>
                 <View style={styles.modalView}>
-                    <Text style={styles.modalText}>La tarea: {taskActive.task}</Text>
+                    <Text style={styles.modalText}>{taskActive.task}</Text>
                     <View style={styles.buttonContainer}>
                         <Pressable
                             style={[styles.button, styles.buttonDone]}
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     modalView: {
         margin: 20,
         backgroundColor: "white",
-        borderRadius: 20,
+        borderRadius: 5,
         padding: 35,
         alignItems: "center",
         shadowColor: "#000",
@@ -98,6 +98,8 @@ const styles = StyleSheet.create({
     },
     modalText: {
         marginBottom: 15,
+        fontSize: 25,
+        fontWeight: "bold",
         textAlign: "center",
     },
 });

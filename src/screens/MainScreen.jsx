@@ -18,7 +18,7 @@ const MainScreen = () => {
         if (input == '') {
             console.log("No se escribió nada");
         } else {
-            console.log("Se agregó una task");
+            console.log("Se agregó una tarea");
             setList([
                 ...list,
                 {
