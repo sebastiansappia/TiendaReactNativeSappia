@@ -9,10 +9,10 @@ import ModalTask from "../Components/Modal";
 
 const MainScreen = () => {
 
-    const [list, setList] = useState([])
-    const [input, setInput] = useState("")
+    const [list, setList] = useState([]);
+    const [input, setInput] = useState("");
     const [modalVisible, setModalVisible] = useState(false);
-    const [taskActive, setTaskActive] = useState({})
+    const [taskActive, setTaskActive] = useState({});
 
     const onAddTask = () => {
         if ((!input.replace(/\s/g, '').length) || input.length == 0) {
@@ -28,17 +28,17 @@ const MainScreen = () => {
                 }
             ])
         }
-    }
+    };
 
     const onPressTask = (task) => {
-        console.log(task)
-        setTaskActive(task)
-        setModalVisible(!modalVisible)
-    }
+        console.log(task);
+        setTaskActive(task);
+        setModalVisible(!modalVisible);
+    };
 
     const onPressStatus = (status) => {
         console.log("Se presiono en onPressDone");
-        const remainTask = list.filter(taskList => taskList.id !== taskActive.id)
+        const remainTask = list.filter(taskList => taskList.id !== taskActive.id);
         const orderedList = [
             ...remainTask,
             {
@@ -53,10 +53,10 @@ const MainScreen = () => {
                 return -1;
             }
             return 0;
-        })
-        console.log(taskActive)
-        setList(orderedList)
-        setModalVisible(!modalVisible)
+        });
+        console.log(taskActive);
+        setList(orderedList);
+        setModalVisible(!modalVisible);
     }
 
     console.log(list);

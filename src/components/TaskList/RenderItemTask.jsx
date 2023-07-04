@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, Pressable } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, Pressable } from 'react-native';
+import React from 'react';
 
 const RenderItemTask = ({ item, onPressTask }) => {
     return (
@@ -13,9 +13,9 @@ const RenderItemTask = ({ item, onPressTask }) => {
             </View>
         </Pressable>
     )
-}
+};
 
-export default RenderItemTask
+export default RenderItemTask;
 
 const styles = StyleSheet.create({
     task: {
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: "#fff",
     },
-})
+});
